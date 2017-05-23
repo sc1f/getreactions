@@ -50,7 +50,7 @@ def parse_memes(ids):
 
 def order_memes(memes):
 	# sort
-	sorted_list = sorted(memes, key=lambda k: k['total_count'])
+	sorted_list = sorted(memes, key=lambda k: k['total_count'], reverse=True)
 	print(sorted_list) 
 
 if __name__ == '__main__':
